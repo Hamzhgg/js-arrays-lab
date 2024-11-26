@@ -88,4 +88,112 @@ Exercise 6: Replace elements
 Complete Exercise 6 in the space below:
 */
 
+foods.splice(1,1,'sushi','cupcake');
+
 console.log('Exercise 6 result:', foods);
+
+console.log('---------------------------------');
+
+
+/*
+Exercise 7: Using the `slice()` method
+
+1) Use the `slice()` method to create a new array that contains 'sushi' and 
+   'cupcake'.
+
+2) Assign it to a variable named `yummy`.
+
+Complete Exercise 7 in the space below:
+*/
+
+const yummy = foods.slice(1,3);
+
+console.log('Exercise 7 result:', yummy);
+
+console.log('---------------------------------');
+
+
+/*
+Exercise 8: Finding an index
+
+1) Using the `indexOf()` method, find the index of the string 'tofu' in the 
+   `foods` array. 
+
+2) Assign it to a variable named `soyIdx`.
+
+Complete Exercise 8 in the space below:
+*/
+
+soyIdx = foods.indexOf('pizza');
+
+console.log('Exercise 8 result:', soyIdx);
+
+
+console.log('---------------------------------');
+
+
+/*
+Exercise 9: Joining elements
+
+1) Use the `join()` method to concatenate the strings in the `foods` array, 
+   separated by ' -> '. 
+
+2) Assign the result to a variable called `allFoods`. 
+
+Note: The final result should log as:
+'taco -> sushi -> cupcake -> tofu -> cheeseburger'
+
+Complete Exercise 9 in the space below:
+*/
+
+const allFoods = foods.join(' -> ');
+
+console.log('Exercise 9 result:', allFoods);
+
+console.log('---------------------------------');
+
+
+
+/*
+Exercise 10: Check for an element
+
+1) Using the .includes() method, check if the `foods` array contains the string
+   'soup'.
+
+2) Assign the result to a variable called `hasSoup``.
+
+Complete Exercise 10 in the space below:
+*/
+
+const hasSoup = foods.includes('soup');
+
+console.log('Exercise 10 result:', hasSoup);
+
+
+console.log('---------------------------------');
+
+
+/*
+Exercise 11: Odd numbers from an array
+
+1) Choose a method to iterate through the `nums` array.
+
+2) Push each odd number to a new array named `odds`.
+
+Hint: Initialize the `odds` variable to an empty array before the iteration.
+
+Complete Exercise 11 in the space below:
+*/
+
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+const odds = [];
+
+for (let i = 0; i < nums.length; i++) {
+   if(nums[i] % 2 !== 0) {
+   odds.push(nums[i]);
+   };
+};
+
+console.log('Exercise 11 result:', odds);
+
+console.log('---------------------------------');
